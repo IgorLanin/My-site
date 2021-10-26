@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Мудрость</title>
+	<meta charset="utf-8">
+	<link href="normalize.css" rel="stylesheet">
+	<link href="skeleton.css" rel="stylesheet">
+	<link href="custom.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Neucha&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"> </script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<h1 class="mud">Мудрая цитата на каждый день от мудрогой Джейсона</h1>
+	</div>
+	<div class="row">
+		<div class="six columns left">
+			<img src="64798.png"  alt="Посмотри вправо">
+			<p>Многим из нас нужна мудрость, чтобы знать, как прожить этот день. Этот сайт-не просто сайт. Это-сборник мудрости, луч света знания в этом мире.</p>
+		</div>
+		<div class="six columns right">
+			<p>Спеши воспользоваться этой мудростью-кликай на круглое фото брутального Стэтхема ниже и получи мудрость!</p>
+			<!--<img src="1122334.jpg" alt="Посмотри вниз и кликни на Стэтхема">-->
+		</div>
+	</div>
+	<div class="row face">
+		<img class="faseSt"src="facest.jpg" alt="Брутальный Стэтхем">
+<div class="message1">
+	<p> </p>
+</div>
+</div>
+		</div>
+	<div class="row">
+		<script type="text/javascript">
+        var i = 0;
+        var answers = [
+            "Превосходство — это когда есть на что насрать, и есть чем.©",
+            "Почесал яйца-понюхал руку.©",
+            "На педалях пяточки, еду на девяточке.©",
+            "Кто обзывается, тот сам так называется©",
+            "Не ссы против ветра©",
+            "Живи, кайфуй, гуляй, играй©",
+            "Расти большой, не будь лапшой©",
+            "Хороший человек плохой воздух в себе держать не будет©",
+            "Я по утрам единорог<br>только рог в районе ног©",
+            "Пока не доказано,<br>Не ебет, что сказано©",
+            "За деда и двор стреляю в упор©",
+            "Пернул в ладошку,<br>Дал понюхать кошке©",
+            "Спрятать чувства легко,<br>Стояк спрятать сложнее©",
+            "Хозяйство вести не хером трясти©",
+            "Комп без инета как хуй без минета©",
+            "Курильщик без спичек<br>как хуй без яичек©",
+            "Жизнь становится легкче после того,<br>как посрал©",
+        ];
+ 
+        $(function () {
+ 
+            $('.face').click(function () {
+                i = Math.floor(Math.random() * answers.length)
+                showText(this, answers[i]);
+            }); ;
+ 
+            function showText(panel, text) {
+ 
+                var panel = $(panel);
+                var msg = $('.message1 p', panel);
+                panel.fadeOut(500, function () {
+                    msg.html(text);
+                    panel.fadeIn(500);
+                });
+            }
+        });
+     
+    </script>
+	</div>
+	<div class="row">
+	<footer>
+		<p class="wiki">Джейсон Стейтем родился 26 июля 1967 года в Шайрбруке, графство Дербишир. Он был вторым сыном в семье лаунж-певца и портнихи, ставшей танцовщицей. Позже переехал в Грейт-Ярмут, графство Норфолк, и рос, следуя стопам своих родителей, овладевая искусством уличного театра.</p>
+	</footer>
+</div>
+</div>
+</div>
+<address>
+Собственность 2021, Igor Lanin Corporation
+</address>
+</body>
+</html>
